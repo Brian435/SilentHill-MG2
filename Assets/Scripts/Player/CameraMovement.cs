@@ -29,4 +29,13 @@ public class CameraMovement : MonoBehaviour
             Camera.main.transform.localRotation = Quaternion.Euler(-yRotation, 0f, 0f);
         }
     }
+
+    public void LookAtTerget()
+    {
+        //Camera.main.transform.LookAt();
+        Camera.main.fieldOfView = 30f;
+
+    }
+
+
 }
